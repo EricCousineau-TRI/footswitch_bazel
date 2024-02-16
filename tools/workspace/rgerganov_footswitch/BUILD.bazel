@@ -1,0 +1,6 @@
+# This is to ensure we build the public targets using `bazel build //...`.
+filegroup(
+    name = "build_as_simple_test",
+    testonly = 1,
+    srcs = ["@rgerganov_footswitch//:build_as_simple_test"],
+)

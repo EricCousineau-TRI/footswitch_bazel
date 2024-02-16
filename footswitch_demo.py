@@ -1,6 +1,6 @@
 import time
 
-from footswitch_bazel.example.footswitch import FootSwitch
+from footswitch_bazel.footswitch import FootSwitch
 
 
 def main():

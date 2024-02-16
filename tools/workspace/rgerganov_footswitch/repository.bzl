@@ -3,9 +3,7 @@
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
-def footswitch_repository(
-        name,
-        mirrors = None):
+def rgerganov_footswitch_repository(name):
     commit = "b7493170ecc956ac87df2c36183253c945be2dcf"
     url = (
         "https://github.com/rgerganov/footswitch/archive/{}.tar.gz"
@@ -17,5 +15,5 @@ def footswitch_repository(
         url = url,
         sha256 = sha256,
         strip_prefix = "footswitch-{}".format(commit),
-        build_file = "//tools/workspace/footswitch:package.BUILD.bazel",  # noqa
+        build_file = "//tools/workspace/rgerganov_footswitch:package.BUILD.bazel",  # noqa
     )
